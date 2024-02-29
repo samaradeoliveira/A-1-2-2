@@ -40,8 +40,9 @@ def predict_emotion():
         # Enviar resposta         
         return jsonify(response)
 
-
+##a linha debaixo é uma rota de salvar a entrada
 @app.route("/save-entry", methods=["POST"])
+##a linha debaixo é uma função python o nome é salvar entrada
 def save_entry():
 
     # Obtenha a data, a emoção prevista e o texto digitado pelo usuário para salvar a entrada
